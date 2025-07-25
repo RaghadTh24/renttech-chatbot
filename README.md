@@ -14,5 +14,10 @@ The chatbot helps users with rental processes, payment guidance, and general inq
 1. Clone this repository  
 2. Create a virtual environment and activate it  
 3. Install dependencies with:  
-   ```bash
    pip install -r requirements.txt
+4. Apply migrations:
+   python manage.py migrate
+5. Run the development server:
+   python manage.py runserver
+6. Open your browser and visit:
+http://127.0.0.1:8000/chatbot/
