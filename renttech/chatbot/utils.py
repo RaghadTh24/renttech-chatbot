@@ -1,10 +1,12 @@
 import uuid
 import requests
 import json
+from dotenv import load_dotenv
+import os
 
-# مفتاح API حقك
-OPENROUTER_API_KEY = "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"
+load_dotenv()  # يحمل القيم من ملف .env
 
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 # (حط هنا تعريفات القوالب والنصوص مثل اللي عندك)
 
 template_system_functions = """
